@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>註冊頁</title>
-    <script type="module" crossorigin src="/vitewebsite/assets/main-B_i0OS1i.js"></script>
-    <link rel="stylesheet" crossorigin href="/vitewebsite/assets/main-BXnNX6Q5.css">
+    <script type="module" crossorigin src="/vitewebsite/assets/main-niLOkwMt.js"></script>
+    <link rel="stylesheet" crossorigin href="/vitewebsite/assets/main-D6qdjw8e.css">
   </head>
   <body>
     <nav class="container py-16 d-flex align-center justify-between">
@@ -27,18 +27,97 @@
     <main class="container">
       <section class="row">
         <div class="col-5">
-          <div class="logoin">
+          <div class="leftbanner">
             <img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-sm.png?raw=true"
               alt=""
             />
-            <div>
+            <div class="leftbanner-text">
               <h2 class="display2 text-on-dark">URBNSTEP</h2>
-              <p>Your Step, Your Statement</p>
+              <p class="h4 text-muted">Your Step, Your Statement</p>
             </div>
           </div>
         </div>
-        <div class="col-7"></div>
+        <div class="col-7 login">
+          <div class="login-tap">
+            <h2 class="h3 mb-32">歡迎!</h2>
+
+            <input type="radio" name="panelCtrl" id="tab1" checked />
+            <input type="radio" name="panelCtrl" id="tab2" />
+
+            <div class="tabPanel mb-32">
+              <label for="tab1" class="tab tab1 h6">登入</label>
+              <label for="tab2" class="tab tab2 h6">註冊</label>
+            </div>
+
+            <div class="contentGroup">
+              <div class="content content1">
+                <ul class="sns-btn">
+                  <li class="d-flex mb-8">
+                    <a href="">
+                      <img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week3-4/facebook.svg"
+                        alt=""
+                      />
+                      Facebook 登入</a
+                    >
+                  </li>
+                  <li class="d-flex mb-8">
+                    <a href=""
+                      ><img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week3-4/apple.svg"
+                        alt=""
+                      />
+                      Apple 登入</a
+                    >
+                  </li>
+                  <li class="d-flex mb-8">
+                    <a href=""
+                      ><img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week3-4/google.svg"
+                        alt=""
+                      />
+                      Google 登入
+                    </a>
+                  </li>
+                </ul>
+                <!-- 頁籤1 內容 -->
+              </div>
+              <div class="content content2">
+                <ul class="sns-btn">
+                  <li class="d-flex mb-8">
+                    <a href="">
+                      <img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week3-4/facebook.svg"
+                        alt=""
+                      />
+                      Facebook 註冊</a
+                    >
+                  </li>
+                  <li class="d-flex mb-8">
+                    <a href=""
+                      ><img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week3-4/apple.svg"
+                        alt=""
+                      />
+                      Apple 註冊</a
+                    >
+                  </li>
+                  <li class="d-flex mb-8">
+                    <a href=""
+                      ><img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week3-4/google.svg"
+                        alt=""
+                      />
+                      Google 註冊
+                    </a>
+                  </li>
+                </ul>
+                <!-- 頁籤2 內容 -->
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="py-64 py-sm-32">
