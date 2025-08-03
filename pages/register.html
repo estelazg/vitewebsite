@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>註冊頁</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="container">
+      <section class="row py-64 py-md-0">
+        <div class="col-5 col-md-4">
+          <div class="leftbanner mr-24 mr-sm-0">
+            <div class="leftbanner-text">
+              <h1 class="display2 text-on-dark d-md-no">URBNSTEP</h1>
+              <p class="h4 text-muted d-md-no">Your Step, Your Statement</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-7 login col-md-4">
+          <div class="login-tap">
+            <h2 class="h3 mb-32 h4-md">歡迎!</h2>
+
+            <input type="radio" name="panelCtrl" id="tab1" checked />
+            <input type="radio" name="panelCtrl" id="tab2" />
+
+            <div class="tabPanel mb-32 mb-md-24">
+              <label for="tab1" class="tab tab1 h6">登入</label>
+              <label for="tab2" class="tab tab2 h6">註冊</label>
+            </div>
+
+            <div class="contentGroup">
+              <div class="content content1">
+                <ul class="sns-btn">
+                  <li class="d-flex mb-8">
+                    <a href="">
+                      <img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week3-4/facebook.svg"
+                        alt=""
+                      />
+                      Facebook 登入</a
+                    >
+                  </li>
+                  <li class="d-flex mb-8">
+                    <a href=""
+                      ><img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week3-4/apple.svg"
+                        alt=""
+                      />
+                      Apple 登入</a
+                    >
+                  </li>
+                  <li class="d-flex mb-8">
+                    <a href=""
+                      ><img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week3-4/google.svg"
+                        alt=""
+                      />
+                      Google 登入
+                    </a>
+                  </li>
+                </ul>
+                <!-- 頁籤1 內容 -->
+              </div>
+              <div class="content content2">
+                <ul class="sns-btn">
+                  <li class="d-flex mb-8">
+                    <a href="">
+                      <img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week3-4/facebook.svg"
+                        alt=""
+                      />
+                      Facebook 註冊</a
+                    >
+                  </li>
+                  <li class="d-flex mb-8">
+                    <a href=""
+                      ><img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week3-4/apple.svg"
+                        alt=""
+                      />
+                      Apple 註冊</a
+                    >
+                  </li>
+                  <li class="d-flex mb-8">
+                    <a href=""
+                      ><img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week3-4/google.svg"
+                        alt=""
+                      />
+                      Google 註冊
+                    </a>
+                  </li>
+                </ul>
+                <!-- 頁籤2 內容 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+.products-list .active {
+  color: $primary-400;
+}
+.page-item .btn {
+  padding: 8px 15px;
+}
+.page-item {
+  .active {
+    background-color: $primary-300;
+  }
+  :hover {
+    background-color: $neutral-100;
+  }
+}
+.banner.btn {
+  color: $neutral-0;
+}

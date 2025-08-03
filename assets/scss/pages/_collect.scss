@@ -1,0 +1,33 @@
+.collect {
+  img {
+    width: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .collect {
+    img {
+      width: 32px;
+    }
+  }
+}
+.time-text {
+  color: $primary-400;
+  width: 100%;
+  padding: 12px 0;
+  .bi-truck {
+    font-size: 24px;
+    margin-left: 16px;
+    margin-right: 12px;
+  }
+}
+
+.collect-item {
+  img {
+    width: 120px;
+    height: auto;
+  }
+}
+.size-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}

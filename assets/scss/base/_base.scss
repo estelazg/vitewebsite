@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #212529;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: $neutral-900;
+}
+button {
+  font-family: "Noto Sans TC";
+
+  &:disabled {
+    cursor: default;
+  }
+}

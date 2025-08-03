@@ -1,0 +1,103 @@
+.leftbanner {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-sm.png?raw=true);
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  position: relative;
+  img {
+    border-radius: 16px;
+  }
+  &-text h2 {
+    position: absolute;
+    top: 70px;
+    left: 40px;
+  }
+  &-text p {
+    position: absolute;
+    top: 144px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .leftbanner {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login-sm.png?raw=true);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    padding-bottom: 250px;
+    background-position: center top;
+  }
+}
+.login {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login-bg.png?raw=true);
+  border-radius: 16px;
+  background-size: cover;
+  &-tap {
+    padding: 120px 80px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .login {
+    background-image: none;
+    margin: 0 12px;
+    &-tap {
+      padding: 32px 0;
+    }
+  }
+}
+
+.sns-btn {
+  li {
+    background-color: $neutral-0;
+    border: 1px solid $neutral-300;
+  }
+  img {
+    width: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 12px;
+  }
+}
+
+/* 隱藏內容區 */
+.contentGroup .content {
+  display: none;
+}
+.tabPanel {
+  display: flex;
+  .tab1,
+  .tab2 {
+    display: block;
+    width: 50%;
+    justify-self: center;
+  }
+}
+/* 顯示對應內容 */
+#tab1:checked ~ .contentGroup .content1,
+#tab2:checked ~ .contentGroup .content2 {
+  display: block;
+}
+
+/* 選中的 tab 樣式 */
+#tab1:checked ~ .tabPanel .tab1,
+#tab2:checked ~ .tabPanel .tab2 {
+  border-bottom: 2px solid $neutral-900;
+  color: black;
+}
+
+/* 沒選中的 tab 樣式 */
+#tab1:checked ~ .tabPanel .tab2,
+#tab2:checked ~ .tabPanel .tab1 {
+  border-bottom: 2px solid $neutral-300;
+  color: black;
+}
+
+/* 隱藏 radio 按鈕 */
+#tab1,
+#tab2 {
+  display: none;
+}
